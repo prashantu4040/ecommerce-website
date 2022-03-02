@@ -22,11 +22,11 @@ const Context = () => {
               return (
                 <>
                   <div key={index}>
-                    <div className="col-10 col-md-4 mt-5">
+                    <div className="col-10 col-md-4 mt-5 mb-3">
                       <div className="card p-2 ">
                         <div className="d-flex align-items-center">
                           <div className="image">
-                            <img src={currEle.images[0].src} className="rounded" width="155"></img>
+                            <img src={currEle.images[0].src} className="rounded" width="155" alt="Product Image"></img>
                           </div>
                           <div className="ml-3 w-100">
                             <h4 className="mb-0 mt-0 textLeft">{currEle.brand}</h4><span className="textLeft">{currEle.productName}</span>
