@@ -26,14 +26,14 @@ const Context = () => {
                       <div className="card p-2 ">
                         <div className="d-flex align-items-center">
                           <div className="image">
-                            <img src={currEle.images[0].src} className="rounded" width="155" alt="Product Image"></img>
+                            <img src={currEle.images[0].src} className="rounded" width="155" alt="Product "></img>
                           </div>
                           <div className="ml-3 w-100">
                             <h4 className="mb-0 mt-0 textLeft">{currEle.brand}</h4><span className="textLeft">{currEle.productName}</span>
                             <div className="p-2 m-2 bg-primary d-flex justify-content-between rounded text-white stats">
                               <div className="d-flex flex-column "><span className="articles">RS</span><span className="number1">{currEle.price}</span></div>
                               <div className="d-flex flex-column "><span className="followers">Gender</span><span className="number2">{currEle.gender}</span></div>
-                              <div className="d-flex flex-column "><span className="rating">Rating</span><span className="number3">{currEle.rating}</span></div>
+                              <div className="d-flex flex-column "><span className="rating">Rating</span><span className="number3">{currEle.rating.toFixed(2)}</span></div>
                             </div>
                           </div>
                         </div>
